@@ -1,15 +1,44 @@
-# TransFuser-CARLA  
+# TransFuser-CARLA
+
 Transformer-Based Multi-Modal Sensor Fusion for Autonomous Driving
+Introduction
 
-## Introduction
+This repository contains an implementation of a transformer-based sensor fusion framework for end-to-end autonomous driving using the CARLA simulator.
+The model is trained using imitation learning, where expert driving behavior is learned from multi-modal sensor data.
 
-This repository contains an implementation of a **Transformer-based sensor fusion framework** for **end-to-end autonomous driving** using the **CARLA simulator**.  
-The model is trained using **imitation learning**, where expert driving behavior is learned from multi-modal sensor data.
+The system fuses information from RGB cameras and LiDAR using a transformer-based architecture to generate vehicle control commands.
+This codebase is designed for research and experimentation in autonomous driving, sensor fusion, and learning-based control within realistic simulated environments.
 
-The system fuses information from **RGB cameras and LiDAR** using a transformer-based architecture to generate vehicle control commands.  
-This codebase is designed for research and experimentation in **autonomous driving, sensor fusion, and learning-based control** within realistic simulated environments.
 
 ---
+
+## Workflow Overview
+
+### 1. Data Generation
+- A **rule-based autopilot agent** drives autonomously in CARLA.
+- Sensor data (**RGB cameras, LiDAR**) and vehicle states are recorded.
+- The collected data serves as expert demonstrations for imitation learning.
+
+### 2. Training
+- The **TransFuser model** is trained using imitation learning.
+- A transformer-based architecture fuses multi-modal sensor features.
+- The model learns to predict vehicle control commands directly from sensor inputs.
+
+### 3. Evaluation
+- The trained model is deployed as an autonomous agent in CARLA.
+- Performance is evaluated on predefined routes and driving scenarios.
+- Metrics such as route completion, infractions, and driving stability are analyzed.
+
+---
+
+## Key Features
+
+- Transformer-based **multi-modal sensor fusion**
+- End-to-end **imitation learning framework**
+- Fully integrated with the **CARLA simulator**
+- Supports **single-GPU and multi-GPU training**
+- Modular and extensible codebase for autonomous driving research
+
 
 ## Code Structure
 
@@ -60,22 +89,4 @@ transfuser/
     Conda environment specification.
 
 
-**Important:**  
-- The opening ```text and closing ``` **must be on their own lines**
-- Do **not indent** the backticks
-
 ---
-
-##  After this fix, GitHub will show:
-✔ Proper tree layout  
-✔ Clean spacing  
-✔ Professional research-grade README  
-✔ Exactly like top academic repositories  
-
----
-
-###  Pro tip (recommended)
-Also add this **one-liner under the title** to look more professional:
-
-```md
-> Transformer-based multi-modal sensor fusion for end-to-end autonomous driving using CARLA.
