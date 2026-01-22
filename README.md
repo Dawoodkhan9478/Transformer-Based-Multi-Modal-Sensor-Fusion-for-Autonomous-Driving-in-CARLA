@@ -60,9 +60,6 @@ transfuser/
     Conda environment specification.
 
 
-
----
-
 ## Workflow Overview
 
 ### 1. Data Generation
