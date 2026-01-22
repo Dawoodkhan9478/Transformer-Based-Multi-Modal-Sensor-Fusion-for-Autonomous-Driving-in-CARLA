@@ -12,6 +12,8 @@ This codebase is designed for research and experimentation in **autonomous drivi
 ---
 
 ## Code Structure
+
+```text
 transfuser/
 ├── team_code_transfuser/
 │   ├── train.py
@@ -56,6 +58,7 @@ transfuser/
 │
 └── environment.yml
     Conda environment specification.
+
 
 
 ---
