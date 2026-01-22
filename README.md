@@ -60,7 +60,7 @@ transfuser/
     Conda environment specification.
 
 
-## Workflow Overview
+# Workflow Overview
 
 ### 1. Data Generation
 - A **rule-based autopilot agent** drives autonomously in CARLA.
