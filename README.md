@@ -60,29 +60,22 @@ transfuser/
     Conda environment specification.
 
 
-# Workflow Overview
-
-### 1. Data Generation
-- A **rule-based autopilot agent** drives autonomously in CARLA.
-- Sensor data (**RGB cameras, LiDAR**) and vehicle states are recorded.
-- The collected data serves as expert demonstrations for imitation learning.
-
-### 2. Training
-- The **TransFuser model** is trained using imitation learning.
-- A transformer-based architecture fuses multi-modal sensor features.
-- The model learns to predict vehicle control commands directly from sensor inputs.
-
-### 3. Evaluation
-- The trained model is deployed as an autonomous agent in CARLA.
-- Performance is evaluated on predefined routes and driving scenarios.
-- Metrics such as route completion, infractions, and driving stability are analyzed.
+**Important:**  
+- The opening ```text and closing ``` **must be on their own lines**
+- Do **not indent** the backticks
 
 ---
 
-## Key Features
+##  After this fix, GitHub will show:
+✔ Proper tree layout  
+✔ Clean spacing  
+✔ Professional research-grade README  
+✔ Exactly like top academic repositories  
 
-- Transformer-based **multi-modal sensor fusion**
-- End-to-end **imitation learning framework**
-- Fully integrated with the **CARLA simulator**
-- Supports **single-GPU and multi-GPU training**
-- Modular and extensible codebase for autonomous driving research
+---
+
+###  Pro tip (recommended)
+Also add this **one-liner under the title** to look more professional:
+
+```md
+> Transformer-based multi-modal sensor fusion for end-to-end autonomous driving using CARLA.
